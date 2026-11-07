@@ -10,7 +10,7 @@ func TestLbToKg(t *testing.T) {
 	n := randbtw.Generate(1, 9999)
 	t.Logf("Generated-Random-Integer: %v\n", n)
 
-	correct := Kilogram(float64(n) / lb) // correct formula
+	correct := Kilogram(float64(n) / Lb) // correct formula
 	needCheck := LbToKg(Pound(n))
 
 	if testing.Verbose() {
@@ -27,7 +27,7 @@ func TestKgToLb(t *testing.T) {
 	n := randbtw.Generate(1, 9999)
 	t.Logf("Generated-Random-Integer: %v\n", n)
 
-	correct := Pound(float64(n) * lb) // correct formula
+	correct := Pound(float64(n) * Lb) // correct formula
 	needCheck := KgToLb(Kilogram(n))
 
 	if testing.Verbose() {

@@ -5,7 +5,7 @@ import "fmt"
 type Pound float64
 type Kilogram float64
 
-const lb = 2.2046226218 // pound
+const Lb = 2.2046226218 // pound
 
 func (lb Pound) String() string {
 	return fmt.Sprintf("%f lb.", lb)
